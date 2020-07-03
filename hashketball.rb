@@ -209,4 +209,4 @@ end
 #team_names
 #player_numbers("Brooklyn Nets")
 #player_stats("Alan Anderson")
-biggest_shoe_size
+big_shoe_rebounds
