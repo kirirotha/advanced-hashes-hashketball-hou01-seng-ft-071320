@@ -182,7 +182,7 @@ end
 
 def player_stats(player)
   game_hash.each do |key1, value1|
-    puts value1[player_name]
+    puts value1[:player_name]
   end  
 end
 
