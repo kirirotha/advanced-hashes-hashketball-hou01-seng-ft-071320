@@ -180,8 +180,15 @@ def player_numbers(team_name)
   return player_numbers
 end
 
+def player_stats(player)
+  game_hash.each do |key1, value1|
+    puts value1
+  end  
+end
+
 #num_points_scored(player_name)
 #shoe_size(player_name)
 #team_colors("Brooklyn Nets")
 #team_names
-player_numbers("Brooklyn Nets")
+#player_numbers("Brooklyn Nets")
+player_stats("Alan Anderson")
