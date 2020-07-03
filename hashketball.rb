@@ -190,9 +190,23 @@ def player_stats(player)
   end  
 end
 
+def big_shoe_rebounds
+  biggest_shoe_size
+  game_hash.each do |key1, value1|
+    value1[:players].each do |key2, value2|
+      if key2[:shoe] > biggest_shoe_size
+        biggest_shoe_size =  key2[:shoe]
+      end  
+    end  
+  end  
+  puts biggest_shoe_size
+end
+
+
 #num_points_scored(player_name)
 #shoe_size(player_name)
 #team_colors("Brooklyn Nets")
 #team_names
 #player_numbers("Brooklyn Nets")
-player_stats("Alan Anderson")
+#player_stats("Alan Anderson")
+biggest_shoe_size
