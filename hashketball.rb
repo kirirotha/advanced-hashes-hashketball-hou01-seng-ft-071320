@@ -182,7 +182,11 @@ end
 
 def player_stats(player)
   game_hash.each do |key1, value1|
-    puts value1[:player_name]
+    value1[:players].each do |key2, value2|
+      if key2[:player_name] == player_name
+        puts key2
+      end  
+    end  
   end  
 end
 
