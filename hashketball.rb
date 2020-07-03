@@ -168,7 +168,19 @@ def team_names
   return team_names
 end
 
+def player_numbers(team_name)
+  player_numbers = []
+  game_hash.each do |key1, value1|
+    value1[:players].each do |key2, value2|
+      #player_numbers.push(value1[:team_name]) 
+      puts key2
+    end 
+  end
+  #return team_names
+end
+
 #num_points_scored(player_name)
 #shoe_size(player_name)
 #team_colors("Brooklyn Nets")
-team_names
+#team_names
+player_numbers("Brooklyn Nets")
