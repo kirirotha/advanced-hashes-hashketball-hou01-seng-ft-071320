@@ -171,11 +171,12 @@ end
 def player_numbers(team_name)
   player_numbers = []
   game_hash.each do |key1, value1|
-    if 
+    puts key1
+    #if 
       value1[:players].each do |key2, value2|
         player_numbers.push(key2[:number]) 
       end
-    end  
+    #end  
   end
   #return team_names
   puts player_numbers
